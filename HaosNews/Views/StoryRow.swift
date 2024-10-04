@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct StoryRow: View {
+struct StoryRow: View, Hashable {
     var headline: String
     var authorName: String
     var keyicon: Bool

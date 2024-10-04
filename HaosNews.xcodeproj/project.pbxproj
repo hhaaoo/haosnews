@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		950234532CAED70600AE6225 /* StoryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950234522CAED70200AE6225 /* StoryDetails.swift */; };
 		95148B972C87310900E59F1B /* HaosNewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95148B962C87310900E59F1B /* HaosNewsApp.swift */; };
 		95148B992C87310900E59F1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95148B982C87310900E59F1B /* ContentView.swift */; };
 		95148B9B2C87310900E59F1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95148B9A2C87310900E59F1B /* Assets.xcassets */; };
@@ -20,7 +21,19 @@
 		95148BB52C87761100E59F1B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95148BB42C87761100E59F1B /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9502344D2CAE51E100AE6225 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95148B8B2C87310900E59F1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95148B922C87310900E59F1B;
+			remoteInfo = HaosNews;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		950234492CAE51E100AE6225 /* HaosNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaosNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		950234522CAED70200AE6225 /* StoryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDetails.swift; sourceTree = "<group>"; };
 		95148B932C87310900E59F1B /* HaosNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaosNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95148B962C87310900E59F1B /* HaosNewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaosNewsApp.swift; sourceTree = "<group>"; };
 		95148B982C87310900E59F1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,7 +48,18 @@
 		95148BB42C87761100E59F1B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		9502344A2CAE51E100AE6225 /* HaosNewsTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = HaosNewsTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		950234462CAE51E100AE6225 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		95148B902C87310900E59F1B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				95148B952C87310900E59F1B /* HaosNews */,
+				9502344A2CAE51E100AE6225 /* HaosNewsTests */,
 				95148B942C87310900E59F1B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				95148B932C87310900E59F1B /* HaosNews.app */,
+				950234492CAE51E100AE6225 /* HaosNewsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +113,7 @@
 		95148BA42C87317800E59F1B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				950234522CAED70200AE6225 /* StoryDetails.swift */,
 				95148B982C87310900E59F1B /* ContentView.swift */,
 				95148BA92C87331100E59F1B /* StoryRow.swift */,
 				95148BB22C874BBE00E59F1B /* StoryList.swift */,
@@ -115,6 +142,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		950234482CAE51E100AE6225 /* HaosNewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 950234512CAE51E100AE6225 /* Build configuration list for PBXNativeTarget "HaosNewsTests" */;
+			buildPhases = (
+				950234452CAE51E100AE6225 /* Sources */,
+				950234462CAE51E100AE6225 /* Frameworks */,
+				950234472CAE51E100AE6225 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9502344E2CAE51E100AE6225 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9502344A2CAE51E100AE6225 /* HaosNewsTests */,
+			);
+			name = HaosNewsTests;
+			packageProductDependencies = (
+			);
+			productName = HaosNewsTests;
+			productReference = 950234492CAE51E100AE6225 /* HaosNewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		95148B922C87310900E59F1B /* HaosNews */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95148BA12C87310900E59F1B /* Build configuration list for PBXNativeTarget "HaosNews" */;
@@ -139,9 +189,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1540;
+				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					950234482CAE51E100AE6225 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 95148B922C87310900E59F1B;
+					};
 					95148B922C87310900E59F1B = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -161,11 +215,19 @@
 			projectRoot = "";
 			targets = (
 				95148B922C87310900E59F1B /* HaosNews */,
+				950234482CAE51E100AE6225 /* HaosNewsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		950234472CAE51E100AE6225 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		95148B912C87310900E59F1B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,12 +243,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		950234452CAE51E100AE6225 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		95148B8F2C87310900E59F1B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				95148B992C87310900E59F1B /* ContentView.swift in Sources */,
 				95148BAC2C87338C00E59F1B /* ModelData.swift in Sources */,
+				950234532CAED70600AE6225 /* StoryDetails.swift in Sources */,
 				95148BAA2C87331100E59F1B /* StoryRow.swift in Sources */,
 				95148BB32C874BBE00E59F1B /* StoryList.swift in Sources */,
 				95148B972C87310900E59F1B /* HaosNewsApp.swift in Sources */,
@@ -196,7 +266,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9502344E2CAE51E100AE6225 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95148B922C87310900E59F1B /* HaosNews */;
+			targetProxy = 9502344D2CAE51E100AE6225 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		9502344F2CAE51E100AE6225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hwu.HaosNewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HaosNews.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HaosNews";
+			};
+			name = Debug;
+		};
+		950234502CAE51E100AE6225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hwu.HaosNewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HaosNews.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HaosNews";
+			};
+			name = Release;
+		};
 		95148B9F2C87310900E59F1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -377,6 +491,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		950234512CAE51E100AE6225 /* Build configuration list for PBXNativeTarget "HaosNewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9502344F2CAE51E100AE6225 /* Debug */,
+				950234502CAE51E100AE6225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		95148B8E2C87310900E59F1B /* Build configuration list for PBXProject "HaosNews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
