@@ -1,23 +1,27 @@
 import SwiftUI
 
-struct StoryList: View {
-    var stories: [Story]
+struct StoryListView: View {
+    @StateObject private var viewModel = StoryListViewModel()
+    
     var body: some View {
         NavigationStack {
-            List(stories, id: \.self) { story in
+            List(viewModel.stories, id: \.self) { story in
                 NavigationLink(value: story) {
                     StoryRow(
                         headline: story.title,
                         authorName: joinAuthor(byline: story.byline),
-                        keyicon: story.protection_product == "red",
-                        imageURL: story.promo_image.urls.imageURL
+                        keyicon: story.protectionProduct == "red",
+                        imageURL: story.promoImage.urls.imageURL
 
                     )
                 }
             }
             .navigationDestination(for: Story.self) { story in
-                StoryDetails(title: story.title, deck: story.deck)
+                StoryDetailsView(title: story.title, deck: story.deck)
             }
+        }
+        .onAppear {
+            viewModel.getStories()
         }
     }
     

@@ -31,26 +31,6 @@ struct StoryRow: View, Hashable {
     
 }
 
-//struct StoryRow: View {
-//    var story: Story
-//    
-//    var url = URL(string: "https://www.hackingwithswift.com/img/covers-flat/pro-swift@2x.png")
-//    
-//    var body: some View {
-//        VStack(alignment: .leading) {
-//            HStack {
-//                Text(story.title)
-//                Spacer()
-//                
-//            }
-//            Text(story.byline.joined(separator: ", "))
-//        }.padding()
-//        
-//    }
-//    
-//}
-
-
 #Preview {
     Group {
         StoryRow(

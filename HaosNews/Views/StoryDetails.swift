@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct StoryDetails: View {
+struct StoryDetailsView: View {
     let title: String
     let deck: String
     

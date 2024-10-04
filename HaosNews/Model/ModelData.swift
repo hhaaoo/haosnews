@@ -1,6 +1,7 @@
 import Foundation
 
-//var stories: [Story] = load("stories.json")
+// retrieve data from local sources.
+// var stories: [Story] = load("stories.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

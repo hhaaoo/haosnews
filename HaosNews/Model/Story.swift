@@ -16,6 +16,14 @@ import SwiftUI
  4. Photo: use the “promo_image.urls.650” value to display the photo
  */
 
+struct Story: Hashable, Codable {
+    var title: String
+    var deck: String
+    var byline: [String]
+    var promoImage: PromoImage
+    var protectionProduct: String
+}
+
 struct StoryURLs: Hashable, Codable {
     var imageURL: URL
     
@@ -26,14 +34,6 @@ struct StoryURLs: Hashable, Codable {
 
 struct PromoImage: Hashable, Codable {
     var urls: StoryURLs
-}
-
-struct Story: Hashable, Codable {
-    var title: String
-    var deck: String
-    var byline: [String]
-    var promo_image: PromoImage
-    var protection_product: String
 }
 
 struct Response: Decodable {

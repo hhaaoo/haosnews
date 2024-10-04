@@ -11,7 +11,7 @@ import SwiftUI
 struct HaosNewsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StoryListView()
         }
     }
 }
